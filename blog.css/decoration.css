@@ -6,7 +6,7 @@ html {
 body {
     margin: 3rem;
     font: 100% 1.25;
-    background-color: darkseagreen;
+    background-color: floralwhite;
     
 }
 img {
@@ -21,14 +21,9 @@ h1 {
       font-size: xx-large;
       font-style: italic;
 }
-header h1::before,
-header h1::after {
-    content;'
-    display: inline-block;
-    margin: 1rem;
-}
+
 p {
-    color: brown;
+    color-adjust: rgb(0,0,0);
     
 }
 h2 {
@@ -40,6 +35,12 @@ strong {
 b {
     color: tomato;
 }
+
+a:visited {
+    color: mediumvioletred;
+}
+
+
 
 
 
