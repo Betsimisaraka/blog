@@ -1,1 +1,115 @@
-@import "relation.css";
+body {
+    background-image: url("../computer.jpeg");
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+    background-position: 12.5% 50%;
+    background-size: cover;
+    border: 10px solid gray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+body > header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-block-end: 3rem;
+}
+
+body > header h1 {
+    text-decoration: mintcream;
+    color: red;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-style: italic;
+    align-self: flex-start;
+    margin-inline-start: 1rem;
+    flex-wrap: wrap;
+}
+
+body > header > nav {
+    margin-top: 1rem;
+    flex-shrink: 1;
+}
+body > header > nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+body > header li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+}
+
+body > main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+body > main h2 {
+   align-self: center;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   color: deeppink;
+}
+
+p {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: papayawhip;
+    font-size: 1rem;
+    margin-inline-start: 10rem;
+    margin-inline-end: 10rem;
+    margin-block-end: 10rem;
+}
+
+body > footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h2 {
+    color: deeppink;
+}
+
+body > footer nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+}
+
+body > footer li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+body > footer > nav li::after {
+    content: '►';
+    padding-right: 2rem;
+    color: lemonchiffon;
+}
