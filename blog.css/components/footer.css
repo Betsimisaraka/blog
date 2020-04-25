@@ -1,0 +1,36 @@
+body > footer nav ul {
+    color: #ccc;
+    font-size: 1rem;
+    border-block-start: 1px solid #4d4d4d;
+    padding-block-start: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+  
+  body > footer ul li {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    margin-block-end: 2rem;
+  }
+  
+  body > footer a {
+    color: green;
+    text-decoration: none;
+  }
+  
+  body > footer a:hover {
+    color: black;
+  }
+  
+  body > footer > nav li:last-child::after {
+    content: none;
+  }
+  
+  body > footer > nav li::after {
+    content: '<';
+    margin-left: 3rem;
+    color: black;
+  }

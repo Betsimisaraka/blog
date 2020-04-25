@@ -1,0 +1,50 @@
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-inline-start: 2rem;
+}
+
+div:nth-of-type(1) img {
+  float: left;
+}
+
+div:nth-of-type(1) b {
+  clear: left;
+  float: left;
+  margin-block-end: 1rem;
+}
+div:nth-of-type(1) p {
+  margin-inline-start: 33rem;
+  margin-block-start: 0;
+}
+
+div:nth-of-type(2) {
+  clear: left;
+}
+
+div:nth-of-type(5) img {
+  float: left;
+}
+
+div:nth-of-type(5) p {
+  clear: right;
+  margin-inline-start: 27rem;
+}
+body > footer {
+  clear: left;
+}
+
+div:nth-of-type(5) img:nth-of-type(2) {
+  clear: left;
+}
+div:nth-of-type(5) b:nth-of-type(1) {
+  clear: left;
+  float: left;
+}
+
+div:nth-of-type(5) b:nth-of-type(2) {
+  clear: left;
+  float: left;
+  margin-block-end: 1rem;
+}
