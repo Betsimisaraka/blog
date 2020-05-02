@@ -48,3 +48,15 @@ div:nth-of-type(5) b:nth-of-type(2) {
   float: left;
   margin-block-end: 1rem;
 }
+
+div {
+  counter-increment: item;
+}
+
+div h3 {
+  color: cadetblue;
+}
+
+div h3::before {
+  content: counter(item)"-"" ";
+}

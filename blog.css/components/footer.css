@@ -1,14 +1,15 @@
 body > footer nav ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
     color: #ccc;
     font-size: 1rem;
-    border-block-start: 1px solid #4d4d4d;
-    padding-block-start: 0.75rem;
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    row-gap: 15px;
-    column-gap: 15px;
-  }
-  
+}
+
   body > footer ul li {
     margin: 0;
     text-decoration: none;
@@ -18,19 +19,25 @@ body > footer nav ul {
   
   body > footer a {
     color: green;
-    text-decoration: none;
+    margin-right: 1rem;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    transition-property: text-decoration-color;
+    transition-duration: 1s;
   }
   
-  body > footer a:hover {
-    color: black;
-  }
-  
-  body > footer > nav li:last-child::after {
-    content: none;
-  }
-  
-  body > footer > nav li::after {
-    content: '<';
-    margin-left: 3rem;
-    color: black;
-  }
+  footer > nav li::after {
+    content: '►';
+    padding-inline-end: 2rem;
+    color: darkblue;
+}
+
+footer > nav li:last-child::after {
+  content: none;
+}
+
+footer > nav li a:hover {
+  color: black;
+  text-decoration-color: transparent;
+  transition-property: scale 1s;
+}
